@@ -1,12 +1,24 @@
-/* Reset some default browser styles */
-body, h1, h2, p, ul, li {
+
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 /* Global styles */
 body {
-    font-family: Arial, sans-serif; /* Optional: Set your preferred font-family */
+    font-family: Arial, sans-serif;
+
 }
 
 header {
@@ -32,16 +44,22 @@ main {
     border: 1px solid #000;
     background-color: #f0f0f0;
     position: relative;
+    box-sizing: border-box;
 }
 
 /* Section title region styles */
 .box h2 {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0px;
+    right: 0px;
     background-color: #333;
     color: #fff;
-    padding: 5px 10px;
+    padding: 0px 21px;
+}
+
+.box p {
+    margin-top: 10px;
+
 }
 
 /* Media queries for responsive design */
@@ -56,9 +74,7 @@ main {
         flex: 0 0 48%;
     }
 
-    .box:last-child {
+    .box:nth-child(3) {
         flex: 0 0 100%;
     }
 }
-
-/* Add more media queries for larger screens if needed */
