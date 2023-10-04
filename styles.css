@@ -1,0 +1,64 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif; /* Optional: Set your preferred font-family */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Section styles */
+.box {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+/* Section title region styles */
+.box h2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 767px) {
+    .box {
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .box {
+        flex: 0 0 48%;
+    }
+
+    .box:last-child {
+        flex: 0 0 100%;
+    }
+}
+
+/* Add more media queries for larger screens if needed */
