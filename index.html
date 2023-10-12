@@ -1,59 +1,18 @@
+<h1>Inspect this page to my code!</h1>
+<h2>this my code</h2>
+<p>
+const names = ["John", "Alice", "Bob", "Jasmine", "Michael"];
 
-<!DOCTYPE html>
-<html lang="en">
+// Loop through the array
+for (let i = 0; i < names.length; i++) {
+    // Get the current name
+    const name = names[i];
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>full website design</title>
-    
-
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-
-<body>
-    <header>
-        <a href="#" class="logo">Food,LLC</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <ul class="navbar">
-            <li><a href="#home">chicken</a></li>
-            <li><a href="#about">Beef</a></li>
-            <li><a href="#menu">Sushi</a></li>
-
-        </ul>
-
-
-
-
-    </header>
-    <section>
-        <h1>Our menu</h1>
-    </section>
-    <section class="container-fluid" style="background-color: grey; padding: 20px 0;">
-        <div class="container">
-            <p style="padding: 10px 20px ; font-size:large">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Recusandae ex,
-                dolorem sed distinctio,
-                corporis
-                fuga pariatur delectus sint eum animi necessitatibus, ipsam ipsum error dolorum et quia optio
-                perspiciatis. Alias adipisci modi ad possimus aliquid explicabo illum qui veritatis magni Lorem ipsum
-                dolor sit amet consectetur, adipisicing elit. Sit enim dolore neque, consequuntur alias voluptas
-                adipisci a beatae odit ullam itaque et earum est repudiandae eos voluptatem quas minus nisi quos tempora
-                nam perspiciatis animi eligendi dignissimos. Soluta, deserunt, dolore voluptatem asperiores sit dolorem
-                accusantium quibusdam perspiciatis dolores in quisquam..</p>
-        </div>
-    </section>
-    <!--javascript-->
-    <script type="text/javascript" src="index.js"></script>
-
-
-</body>
-
-</html>
+    // Check if the name starts with 'j' or 'J'
+    if (name.charAt(0) === 'j' || name.charAt(0) === 'J') {
+        console.log("Goodbye " + name);
+    } else {
+        console.log("Hello " + name);
+    }
+}
+</p>
