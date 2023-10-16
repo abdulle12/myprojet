@@ -4,28 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>full website design</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
-    <h1>This mycode inspect this page to see the output</h1>
-    <p>
-        const names = ["John", "Alice", "Bob", "Jasmine", "Michael"];<br>
+    <header>
+        <a href="#" class="logo">Foods</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-        // Loop through the array
-        for (let i = 0; i < names.length; i++) { <br>
-            // Get the current name
-            const name = names[i]; <br>
-            // Check if the name starts with 'j' or 'J'
-            if (name.charAt(0) === 'j' || name.charAt(0) === 'J') { <br>
-            console.log("Goodbye " + name); <br>
-            } else { <br>
-            console.log("Hello " + name); <br>
-            } <br>
-            } <br>
-    </p>
-    <script src="index.js"></script>
+
+
+
+    </header>
+    <!--home start-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Full website</h1>
+            <h2>Food the <br>most precious things</h2>
+            <a href="#" class="btn">Today's menu</a>
+        </div>
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
+
+    </section>
+    <!--about start-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+        <div class="about-text"></div>
+        <span>About us</span>
+        <h2>We speak the good <br>food language</h2>
+        <p>There are many variations passages of lorem ipsum avaible.majority have suffered alternation in form.</p>
+        <a href="#" class="btn">Today's menu</a>
+    </section>
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>Food menu</span>
+            <h2>Fresh taste and great price</h2>
+        </div>
+        <div class="menu-container">
+            <div class="box">
+                <div class="box-image">
+                    <img src="images/food1.png" alt="">
+                </div>
+                <h2>Chicken Burger</h2>
+                <h3>Tasty food</h3>
+                <span>$11.00</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+
+            <div class="box">
+                <div class="box-image">
+                    <img src="images/food2.png" alt="">
+                </div>
+                <h2>Special Beef Burger</h2>
+                <h3>Tasty food</h3>
+                <span>$11.00</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+
+            <div class="box">
+                <div class="box-image">
+                    <img src="images/food3.png" alt="">
+                </div>
+                <h2>Chicken Fry pack</h2>
+                <h3>Tasty food</h3>
+                <span>$11.00</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+
+        </div>
+    </section>
+
+    <!--service start-->
+    <section class="services" id="services">
+        <div class="heading">
+            <span>services</span>
+            <h2>We provide best quality food</h2>
+        </div>
+        <div class="service-container">
+            <div class="s-box">
+                <img src="images/s1.png" alt="">
+                <h3>order</h3>
+                <p>There are many variations of passages of lorem ipsum available but majority have suffered alteration
+                    injected humour</p>
+            </div>
+            <div class="s-box">
+                <img src="images/s2.png" alt="">
+                <h3>shipping</h3>
+                <p>There are many variations of passages of lorem ipsum available but majority have suffered alteration
+                    injected humour</p>
+            </div>
+            <div class="s-box">
+                <img src="images/s3.png" alt="">
+                <h3>Delivered</h3>
+                <p>There are many variations of passages of lorem ipsum available but majority have suffered alteration
+                    injected humour</p>
+            </div>
+        </div>
+    </section>
+    <!--call to action-->
+    <section class="cta">
+        <h2>We make quality <br> Everyday</h2>
+        <a href="#" class="btn">Let us talk</a>
+    </section>
+    <!--footer start-->
+    <section id="contact">
+        <div class="footer">
+            <div class="main">
+                <div class="col">
+                    <h4>menu links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">service</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Our service</h4>
+                    <ul>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">web development</a></li>
+                        <li><a href="#">marketing</a></li>
+                        <li><a href="#">product management</a></li>
+                        <li><a href="#">Graphic design</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col">
+                    <h4>information</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Delivery information</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">terms & conditions</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Contact Us</h4>
+                    <div class="social">
+                        <a href="#"><i class="bx bxl-facebook"></i></a>
+                        <a href="#"><i class="bx bxl-instagram"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                        <a href="#"><i class="bx bxl-youtube"></i></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!--javascript-->
+    <script type="text/javascript" src="index.js"></script>
+
 
 </body>
 
